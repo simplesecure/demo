@@ -3,18 +3,65 @@ $vin-blue: #5bb7db;
 $vin-green: #60b044;
 $vin-red: #ff0000;
 
+
+// Font stuff:
+// line-height: 1.4em;
+// color: #4d4d4d;
+// -webkit-font-smoothing: antialiased;
+// -moz-font-smoothing: antialiased;
+// font-smoothing: antialiased;
+// font-weight: 300;
+
 /* Styles */
 body {
+  height: 100vh;
+  width: 100vw;
   font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  line-height: 1.4em;
-  color: #4d4d4d;
-  min-width: 230px;
-  max-width: 550px;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+.page {
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  width:100%;
+  background: #68686b;
+}
+.banner-content {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 800px;
+  padding:5px;
   margin: 0 auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  font-smoothing: antialiased;
-  font-weight: 300;
+}
+.banner-logo {
+  max-height:55px;
+  max-width:50%
+}
+
+.content {
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex:1;
+  width: 100%;
+  min-width: 320px;
+  max-width: 800px;
+  margin: 0 auto;
+  border-style: solid;
+  border-color: red;
+  border-width: 2px;
 }
 
 td {
